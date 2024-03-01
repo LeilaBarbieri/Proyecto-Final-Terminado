@@ -1,0 +1,135 @@
+@import "utilidades/variables";
+@import "utilidades/mixin";
+
+// Inicio //
+header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+    img {
+        width: 150px;
+        height: 150px;
+        gap: 10px
+    }
+
+    nav {
+        ul {
+            color: whitesmoke;
+
+
+        }
+
+        li {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+    }
+}
+
+.inicio1 {
+    @include flex;
+    min-width: 250px;
+}
+
+section div.inicio img {
+    @include flex;
+    gap: 15px;
+    margin: 15px;
+    height: 450px;
+    width: 970px;
+}
+
+main .inicio-principal h1 {
+    background-color: $color-principal;
+    font-size: 30px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+
+    p {
+        font-size: 10px;
+    }
+}
+
+section.objetivos {
+    @include flex2;
+    margin-top: 30px;
+    padding: 20px;
+
+    div {
+        img {
+            @include flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        h2 {
+            font-size: 20px;
+            @include mp;
+            background-color: $color-principal;
+
+        }
+    }
+}
+
+.historias-bomberos {
+    background-color: $color-principal;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    h3 {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+        margin: 10px;
+
+    }
+
+
+}
+
+.bomberos-hisotria-video {
+    width: 100%;
+    border-top-right-radius: 80px;
+}
+
+.texto {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+
+.historias-bomberos div.boton {
+    background-color: $color-principal;
+    padding: 10px;
+    margin: 80px;
+    margin-top: 10px;
+    gap: 10px;
+    text-align: center;
+    display: inline-block;
+    color: black
+}
+
+div.boton :active {
+    background-color: $color-boton-p;
+    color: $color-boton-p;
+}
+
+.ayudamos {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+
+    div {
+        h4 {
+           background-color: $color-principal;
+        }
+    }
+}

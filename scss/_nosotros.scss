@@ -1,0 +1,118 @@
+@import "utilidades/variables";
+@import "utilidades/mixin";
+
+.nosotros1 {
+    display: flex;
+    justify-content: center;
+
+    .nostros2 {
+        img {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            gap: 10px;
+            margin-top: 10px
+        }
+    }
+}
+
+.quienes {
+    .quienes-somos {
+        h1 {
+            color: black;
+            text-align: center;
+            background-color: $color-principal;
+            @include mp;
+            font-size: 40px;
+
+        }
+
+        p {
+            @include flex;
+            font-size: 20px;
+            margin: 10px;
+        }
+    }
+}
+
+section staff class.staff {
+    h2 {
+        font-size: 50px;
+        color: black;
+        background-color: none;
+        text-align: center;
+        margin: 20px;
+
+        p {
+            background-color: none;
+            font-size: 20px;
+
+        }
+
+    }
+}
+
+.grupo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 40px;
+    gap: 10px;
+    padding: 10px;
+
+    div {
+        img {
+            @include flex;
+        }
+
+        div {
+            p {
+                text-align: center;
+            }
+        }
+
+    }
+
+}
+
+.ofrecemos {
+    display: flex;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    font-size: 40px;
+    padding: 10px;
+    margin: 90px;
+    margin-top: 10px;
+    gap: 10px;
+    background-color: $color-principal;
+    opacity: 80%;
+
+    div {
+        h3 {
+            font-size: 40px;
+        }
+        .caja2 {
+            @include flex;
+        }
+    }
+
+    .boton-final {
+       @include flex;
+        padding: 10px;
+        margin-top: 10px;
+
+        div{
+            a{
+                text-decoration: none;
+                color: rgb(41, 40, 40);
+                @include flex;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+

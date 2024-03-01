@@ -1,0 +1,161 @@
+@import "utilidades/variables";
+@import "utilidades/mixin";
+
+
+.institucional {
+    @include flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 250px;
+
+    .institucional2 {
+
+        // display: grid;
+
+        h1 {
+            text-align: right;
+            justify-content: baseline;
+            flex-wrap: wrap;
+            font-size: 35px;
+            margin-bottom: 10px;
+            @include mp;
+        }
+
+        div {
+            .institucional-gc {
+                img {
+                    float: left;
+                    width: 50%;
+                    padding: 30px;
+                    width: 50%;
+                    border-top-right-radius: 80px;
+                }
+            }
+
+            .guardavidas-texto {
+                p {
+                    float: right;
+                    width: 50%;
+                    padding: 30px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .boton-gt {
+            @include estilos-boton-a;
+            @include estilos-boton;
+            gap: 10px;
+            padding: 10px;
+    
+        }
+
+    }
+
+    
+}
+
+.institucional3 {
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+    min-width: 250px;
+
+    .institucional-bc {
+        float: right;
+        width: 50%;
+        padding: 30px;
+
+        img {
+            width: 100%;
+            border-top-left-radius: 80px;
+        }
+    }
+
+    .institucional4 {
+        h2 {
+            padding-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+    .institucional-row {
+        .bombero-texto {
+            p {
+                float: left;
+                width: 50%;
+                padding: 3px;
+                text-align: right;
+                text-align: center;
+            }
+        }
+    }
+
+    .boton-bt {
+        @include estilos-boton-a;
+        @include estilos-boton;
+        padding: 12px 3px;
+
+    }
+}
+
+
+// requisitos //
+.inscripciones {
+    h3 {
+        @include flex;
+        font-size: 30px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+.inscripciones2 {
+    @include flex;
+    text-align: center;
+    flex-wrap: wrap;
+
+    h4 {
+        font-size: 30px;
+        color: black;
+        background-color: $color-principal;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.requisitos {
+    @include flex;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+
+    .requisitos2 {
+        @include flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 30px;
+        gap: 10px;
+
+        img {
+            @include flex;
+            text-align: center;
+            gap: 10px;
+            margin: 30px;
+
+            h5 {
+                @include flex;
+                @include mp;
+                text-align: center;
+                font-size: 20px;
+                background-color: $color-principal;
+            }
+        }
+    }
+}
