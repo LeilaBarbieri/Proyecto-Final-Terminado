@@ -1,0 +1,37 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+@mixin flex2 {
+    display: flex;
+    justify-content: center;
+}
+@mixin mp {
+    margin: 10px;
+    padding: 10px;
+}
+
+@mixin estilos-boton {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    gap: 10px;
+    border-radius: 4px;
+    margin: 10px;
+    background-image: linear-gradient(rgb(75, 176, 201), rgb(198, 238, 238));
+}
+
+@mixin estilos-boton-a{
+    text-decoration: none;
+    color: rgb(54, 52, 52);
+    text-align: center;
+    align-items: center;
+}

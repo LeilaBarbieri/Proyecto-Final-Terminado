@@ -1,0 +1,21 @@
+@import "utilidades/variables";
+@import "utilidades/mixin";
+
+.contactanos {
+    @include flex;
+    font-size: 20px;
+  
+    h3 {
+      font-size: 30px;
+    }
+  }
+  
+  .datos {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .buttonclass {
+   @include flex;
+    background-color: $color-principal;
+  }
